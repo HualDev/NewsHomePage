@@ -27,6 +27,18 @@ ul{
     display: none;
 }
 
+.principal{
+    margin-top: 5rem;
+}
+
+.web3Imagen{
+    background-image: url("./assets/images/image-web-3-mobile.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+}
+
 .title img{
     width: 100%;
     height: 100%;
@@ -127,5 +139,98 @@ footer{
     
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:600px) {
+    .menu img{
+        display: none;
+    }
+
+    nav{
+        justify-content:space-between;
+        
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+        color: var(--darkGrayishBlue);
+    }
+
+    .principal{
+        display: flex;
+        justify-content: center;
+        align-items:initial;
+        gap: 2rem;
+    }
+
+    .preview{
+        display: flex;
+    }
+
+    .web3Imagen{
+        background-image: url('./assets/images/image-web-3-desktop.jpg');
+        height: 35vh;
+        background-repeat: no-repeat;
+    }
+
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: initial;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .intro h1{
+        font-size: 1.4rem;
+        margin: 0 auto;
+    }
+
+    .intro p{
+        font-size: 0.6rem;
+        margin: auto;
+    }
+
+    button{
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        margin: 1rem auto;
+    }
+
+    .details{
+        padding: 1rem;
+    }
+
+    .details h1{
+        font-size: 1.5rem;
+    }
+
+    .details h2{
+        font-size: 0.8rem;
+    }
+
+    .details p{
+        font-size: 0.6rem;
+    }
+
+    .new img{
+        width: 40%;
+        height: 20vh;
+    }
+
+    .newDetail span{
+        font-size: 1.5rem;
+    }
+
+    .newDetail h2{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .newDetail p{
+        font-size: 0.6rem;
+    }
 }
   
