@@ -12,9 +12,10 @@
 }
 
 body{
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
     padding: 4rem 2rem;
+    max-width: 60rem;
 }
 
 nav{
@@ -25,6 +26,29 @@ nav{
 
 ul{
     display: none;
+    position: absolute;
+    /*background-image: url("./assets/images/icon-menu-close.svg");*/
+    background-repeat: no-repeat;
+    background-position: 90% 5%;
+    padding-top: 2rem;
+    list-style-type: none;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 150vh;
+    background-color: var(--offWhite);
+    line-height: 3;
+    margin-top: 0;
+}
+
+ul div{
+    text-align: right;
+    padding: 2rem;
+}
+
+ul :hover{
+    color: var(--softRed);
+    cursor: pointer;
 }
 
 .principal{
@@ -71,6 +95,11 @@ button{
     margin: 1rem auto 5rem;
 }
 
+button:hover{
+    background-color: var(--veryDarkBlue);
+    cursor: pointer;
+}
+
 .details{
     background-color: var(--veryDarkBlue);
     padding: 2rem;
@@ -84,6 +113,11 @@ button{
 
 .details h2{
     color: var(--offWhite);
+}
+
+.details h2:hover{
+    color: var(--softOrange);
+    cursor: pointer;
 }
 
 .details p{
@@ -124,6 +158,11 @@ hr{
     font-weight: 700;
 }
 
+.newDetail h2:hover{
+    color: var(--softRed);
+    cursor: pointer;
+}
+
 .newDetail p{
     color: var(--darkGrayishBlue);
     font-size: 1rem;
@@ -141,21 +180,26 @@ footer a {
     color: hsl(228, 45%, 44%);
 }
 
+footer a:hover{
+    color: var(--softRed);
+}
+
 @media (min-width:600px) {
     .menu img{
         display: none;
     }
 
     nav{
-        justify-content:space-between;
-        
+        align-items: initial;
     }
 
     ul{
-        display: flex;
-        list-style-type: none;
+        display: flex;        
         gap: 1rem;
         color: var(--darkGrayishBlue);
+        position: relative;
+        padding-top: 0;
+        height: 0;
     }
 
     .principal{
@@ -167,6 +211,14 @@ footer a {
 
     .preview{
         display: flex;
+    }
+
+    .title{
+        width: 100%;
+    }
+
+    .details{
+        width: 60%;
     }
 
     .web3Imagen{
@@ -184,7 +236,7 @@ footer a {
     }
 
     .intro h1{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         margin: 0 auto;
     }
 
@@ -200,11 +252,11 @@ footer a {
     }
 
     .details{
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     .details h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .details h2{
@@ -212,7 +264,7 @@ footer a {
     }
 
     .details p{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .new img{
@@ -231,6 +283,20 @@ footer a {
 
     .newDetail p{
         font-size: 0.6rem;
+    }
+
+    footer{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width:900px) {
+    .details{
+        width: 50%;
+    }
+
+    .details h1{
+        font-size: 2rem;
     }
 }
   
